@@ -2,14 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <titel>Portfolio</titel>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marisha's Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -24,34 +19,132 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body class="main-content">
-    <header class="section sec1 header active"></header>
-    <i class="fab fa-instagram"></i>
-    <main>
-      <section class="section sec2 about"></section>
-      <section class="section sec3 Portfolio"></section>
-      <section class="section sec4 blogs"></section>
-      <section class="section sec5 contact"></section>
-    </main>
-    <div class="controlls">
-      <div class="control control-1 active-btn" data-id="header">
-        <i class="fa-solid fa-house-user"></i>
+    <header class="section sec1 header" id="home">
+      <div class="header-content">
+        <div class="left-header">
+          <div class="h-shape"></div>
+          <div class="image">
+            <img src="images/profile.png" alt="" />
+          </div>
+        </div>
+        <div class="right-header">
+          <h1 class="name">
+            Hi, I'm <span>Marisha</span>
+            A Web Developer.
+          </h1>
+          <p>
+            I'm a Web Developer. I love to creat beautiful and functional
+            websites.Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book.
+          </p>
+          <div class="btn-con">
+            <a href="" class="main-btn">
+              <span class="btn-text">Download My CV </span>
+              <span class="btn-icon">
+                <i class="fa-solid fa-download"></i
+              ></span>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="control control-2" data-id="about">
-        <i class="fa-solid fa-user"></i>
-      </div>
-      <div class="control control-3" data-id="portfolio">
-        <i class="fa-solid fa-briefcase"></i>
-      </div>
-      <div class="control control-4" data-id="blogs">
-        <i class="fa-brands fa-blogger"></i>
-      </div>
-      <div class="control control-5" data-id="contact">
-        <i class="fa-solid fa-address-book"></i>
-      </div>
-    </div>
+    </header>
 
-    <script src="app.js"></script>
+    <main>
+      <section class="section sec2 about active" id="about">
+        <div class="main-title">
+          <h2>About <span>me</span><span class="bg-text">My Stats</span></h2>
+        </div>
+        <div class="about-container">
+          <div class="left-about">
+            <h4>Information About Me</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.<br /><br />
+              It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+            <div class="btn-con">
+              <a href="" class="main-btn">
+                <span class="btn-text">Download My CV </span>
+                <span class="btn-icon">
+                  <i class="fa-solid fa-download"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="right-about">
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">560+</p>
+                <p class="small-text">Projects <br />Completed</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">10+</p>
+                <p class="small-text">Years Of <br />Experiences</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">300+</p>
+                <p class="small-text">Happy <br />Clients</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">400+</p>
+                <p class="small-text">Customer <br />Review</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <h4 class="stat-title">My Skills</h4>
+          <div class="progress-bars">
+            <div class="progress-bar">
+              <p class="prog-title">html5</p>
+              <div class="progress-con">
+                <p class="prog-text">90%</p>
+                <div class="progress">
+                  <span class="html"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section sec3 Portfolio" id="portfolio"></section>
+      <section class="section sec4 blogs" id="blogs"></section>
+      <section class="section sec5 contact" id="contact"></section>
+      <div class="controlls">
+        <div class="control control-1" data-id="home">
+          <i class="fa-solid fa-house-user"></i>
+        </div>
+        <div class="control control-2 active-btn" data-id="about">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="control control-3" data-id="portfolio">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div class="control control-4" data-id="blogs">
+          <i class="fa-brands fa-blogger"></i>
+        </div>
+        <div class="control control-5" data-id="contact">
+          <i class="fa-solid fa-address-book"></i>
+        </div>
+      </div>
+    </main>
+    <script src="app.js" type="text/javascript"></script>
   </body>
 </html>

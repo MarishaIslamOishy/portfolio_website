@@ -16,7 +16,7 @@ function PageTransitions() {
     });
   }
 
-  //Sctions Active
+  //Sections Active
   allSections.addEventListener("click", (e) => {
     const id = e.target.dataset.id;
     if (id) {
